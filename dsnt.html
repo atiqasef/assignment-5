@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <style>
+            .poppins-regular{
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+        </style>
+</head>
+<body class="w-10/12 bg-[#F4F7FF] poppins-regular mx-auto mt-10">
+    <header class="flex justify-between items-center bg-white p-3">
+        <div class="header-logo flex items-center gap-5">
+            <img class="w-10" src="./assets/logo.png" alt="">
+            <h1 class="text-2xl"> <span class="text-[#00303C]">Dev</span><span class="font-bold">Board</span> </h1>
+        </div>
+        <div id="desk" class="ml-6" ><button class="text-xs mr-5 bg-[#3752FD] px-3 py-2 text-white rounded-md">Back to Desk</button></div>
+    </header>
+    <main>
+        <h3 class="text-center mt-5 font-bold mb-3">Blogs</h3>
+
+        <div class="qs-box bg-white p-3 mb-3">
+            <div class="question">
+                <h1 class="font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+            </div>
+            <div class="border-b border-dashed border-s-teal-100"></div>
+            <div class="answer mt-3">
+                <p>We can select DOM by many different ways. I am making a list of it below:</p>
+                <ul>
+                    <li>1. getElementByID</li>
+                    <li>2. getElementsByClass</li>
+                    <li>3. QuerySelector</li>
+                    <li>4. QuerySelectorAll</li>
+                </ul>
+               <p> Etc.</p>
+            </div>
+        </div>
+
+        <div class="qs-box bg-white p-3 mb-3">
+            <div class="question">
+                <h1 class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            </div>
+            <div class="border-b border-dashed border-s-teal-100"></div>
+            <div class="answer mt-3">
+                <p>The difference between innerHTML, innerText, and textContent:</p>
+                <ul>
+                    <li>1. innerHTML works with an HTML element like various tag. example: p tag, (h1-h6) tag, span tag etc </li>
+                    <li>2. innerText is work for change or set dynamic text for an HTML element in DOM</li>
+                    <li>3. textContent is similar as innerText . But we should textContent because of it's useability . It don't show any error like innerText.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="qs-box bg-white p-3 mb-3">
+            <div class="question">
+                <h1 class="font-bold">Question-3: What is event delegation in the DOM?</h1>
+            </div>
+            <div class="border-b border-dashed border-s-teal-100"></div>
+            <div class="answer mt-3">
+                <p>It reduce our code. We can use. We can attach a single event listener to a parent element </p>
+               
+            </div>
+        </div>
+
+        <div class="qs-box bg-white p-3 mb-3">
+            <div class="question">
+                <h1 class="font-bold">Question-4: What is event bubbling in the DOM?</h1>
+            </div>
+            <div class="border-b border-dashed border-s-teal-100"></div>
+            <div class="answer mt-3">
+                <p>Bubbling in the DOM is an event propagation method.It starts from the last elements and jumped into it's parents elements. [note: sorry for this answer. I don't know how to write it.] </p>
+            </div>
+        </div>
+
+        <div class="qs-box bg-white p-3 mb-3">
+            <div class="question">
+                <h1 class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            </div>
+            <div class="border-b border-dashed border-s-teal-100"></div>
+            <div class="answer mt-3">
+                <p>1. tag.createElement</p>
+                <p>2. for adding I use appendChild</p>
+                <p>3. foe removing I use removeChild</p>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
