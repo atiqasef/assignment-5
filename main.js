@@ -1,8 +1,9 @@
 document.querySelectorAll(".dynamic-card").forEach(card => {
     card.addEventListener('click', function (event) {
         alert('board updated succesfully');
-        // const dmCard = document.getElementsByClassName('dynamic-card');
-        const dmCard = document.querySelector('.actvt').innerText;
+       
+        // console.log(event.target.parentNode.parentNode.parentNode.children[1].innerText);
+        const dmCard = event.target.parentNode.parentNode.parentNode.children[1].innerText;
         const substract = parseInt(document.getElementById('taskCount').innerText);
         const sum = parseInt(document.getElementById('check-number').innerText);
         const number = 1;
@@ -27,10 +28,20 @@ document.querySelectorAll(".dynamic-card").forEach(card => {
 
 
 
-document.getElementById('dsnt').addEventListener('click', function () { 
-    window.location.href= './dsnt.html';
-})
-document.getElementById('desk').addEventListener('click', function () { 
-    window.location.href= './index.html';
+document.getElementById('dsnt').addEventListener('click', function () {
+    window.location.href = './dsnt.html';
 })
 
+
+
+// Clear History
+document.getElementById('clear-history').addEventListener('click', function () { 
+    const clear = document.getElementById('activity-container');
+    clear.innerText = '';
+    console.log('hello')
+})
+
+// **
+// three problem: 1. clear history 2. don't back to desk 3. dynamic date
+
+// *
