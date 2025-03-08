@@ -41,7 +41,17 @@ document.getElementById('clear-history').addEventListener('click', function () {
     console.log('hello')
 })
 
-// **
-// three problem: 1. clear history 2. don't back to desk 3. dynamic date
 
-// *
+// dynamic date 
+const currentDate = new Date();
+
+
+const formattedDate = new Intl.DateTimeFormat('en-GB', {
+  weekday: 'long', 
+  day: '2-digit',  
+  month: 'long',   
+  year: 'numeric', 
+}).format(currentDate);
+
+
+document.getElementById('dynamic-date').textContent = formattedDate;
