@@ -56,21 +56,4 @@ const formattedDate = new Intl.DateTimeFormat('en-GB', {
 
 document.getElementById('dynamic-date').textContent = formattedDate;
 
-// challenge part alert
-        const clickedButtons = new Set(); 
-
-        document.querySelectorAll(".completed-btn").forEach(button => {
-            button.addEventListener("click", function () {
-                clickedButtons.add(this.id); 
-
-                if (clickedButtons.size === 6) { 
-                    setTimeout(() => { 
-                        alert("congrats!!! you have completed all the current task"); 
-                        clickedButtons.clear(); 
-                    }, 300); 
-                }
-            });
-        });
-
-
 
